@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Dhiman - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ankit Dhiman</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile" class="profile-img animated">
+            <h1 class="display-4 animated">Hi, I'm Ankit Dhiman</h1>
+            <p class="lead animated">MERN Stack Developer | Python Enthusiast | Open Source Contributor</p>
+            <a href="#projects" class="btn btn-primary mt-3 animated">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-md-12 animated">
+                    <p>I'm a passionate Bachelor of Computer Applications student (2022-2025) at Maharishi Markandeshwar University, skilled in front-end development and problem-solving.</p>
+                    <p>I was a MERN Stack Trainee at TechLive Solutions and an active open-source Python developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-js-square fa-3x"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-python fa-3x"></i>
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-java fa-3x"></i>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fas fa-database fa-3x"></i>
+                        <p>SQL</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-bootstrap fa-3x"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <p>Tailwind CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill-box">
+                        <i class="fab fa-react fa-3x"></i>
+                        <p>React</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <h2 class="section-title experience">Experience</h2>
+        <div class="experience-item">
+            <div class="experience-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="experience-details">
+                <h3 class="experience-role">MERN Stack Trainee</h3>
+                <p class="experience-company">TechLive Solutions</p>
+                <p class="experience-date">June 2024 - Present</p>
+                <p class="experience-desc">Working on 4+ projects using ExpressJS, NodeJS, ReactJS, TailwindCSS, MongoDB & Figma.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-icon"><i class="fab fa-python"></i></div>
+            <div class="experience-details">
+                <h3 class="experience-role">Python Developer</h3>
+                <p class="experience-company">Open Source</p>
+                <p class="experience-date">Sept 2023 - Present</p>
+                <p class="experience-desc">Regular contributor to multiple open-source projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title projects">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3 class="project-title">Chatting Application</h3>
+                        <p class="project-desc">Real-time chat app with Python, Flask/Django, WebSocket, and SQLite.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3 class="project-title">Spotify Clone</h3>
+                        <p class="project-desc">Music streaming app with Flask/Django and SQL.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3 class="project-title">Course Registration System</h3>
+                        <p class="project-desc">Student course management with admin features using REST API.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Email: <a href="mailto:ankitdhiman202005@gmail.com">ankitdhiman202005@gmail.com</a></p>
+            <p>Phone: +91-8307150368</p>
+            <p>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
